@@ -1,6 +1,6 @@
-[{"Player": "Cristiano Ronaldo", "Skill":"Shooting"},
-  {"Player": "Lionel Messi", "Skill":"Shooting"},
-  {"Player": "Eden Hazard", "Skill":"Shooting"},
-  {"Player": "Sergio Aguero", "Skill":"Shooting"},
-  {"Player": "Gareth Bale", "Skill":"Shooting"},
-  {"Player": "Luis Suarez", "Skill":"Shooting"}]
+[{"Player": "Cristiano Ronaldo", "Team": "Real Madrid"},
+  {"Player": "Lionel Messi", "Team": "Barcelona"},
+  {"Player": "Eden Hazard", "Team": "Chelsea"},
+  {"Player": "Sergio Aguero", "Team": "Manchester City"},
+  {"Player": "Gareth Bale", "Team": "Real Madrid"},
+  {"Player": "Luis Suarez", "Team": "Barcelona"}]

@@ -2,17 +2,243 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <title>Players</title>
-    <meta charset ="utf-8">
-    <script src ="Players.js"></script>
     <style>
-        body{font-family:Helvectia,Arial, sans-serif;}
+        @import "Players.css";
     </style>
 </head>
 <body>
     <h1>Players List</h1>
     <ul id="Players">
-
     </ul>
+
+    <button id="Business_Button">
+        View Player Skills
+    </button>
+
+    <div id="Ronaldo_Modal" class="Modal">
+        <div class="Content">
+            <div class="Business_Header">
+                <span class="Closer">&times;
+                </span>
+                <h2>Cristiano Ronaldo</h2>
+            </div>
+            <div class="Business_Body">
+                <h3>Shooting</h3>
+                <p>A+</p>
+                <h3>Dribbling</h3>
+                <p>B-</p>
+                <h3>Heading</h3>
+                <p>A</p>
+                <h3>Free Kicks</h3>
+                <p>C</p>
+                <h3>Pace</h3>
+                <p>C+</p>
+            </div>
+            <div class="Business_Footer">
+                <h2>Cristiano Ronaldo</h2>
+            </div>
+        </div>
+    </div>
+
+    <button id="Business_Button2">
+        View Player Skills
+    </button>
+
+    <div id="Messi_Modal" class="Modal">
+        <div class="Content">
+            <div class="Business_Header2">
+                <span class="Closer2">&times;
+                </span>
+                <h2>Lionel Messi</h2>
+            </div>
+            <div class="Business_Body2">
+                <h3>Shooting</h3>
+                <p>A+</p>
+                <h3>Dribbling</h3>
+                <p>A+</p>
+                <h3>Heading</h3>
+                <p>C</p>
+                <h3>Free Kicks</h3>
+                <p>A</p>
+                <h3>Pace</h3>
+                <p>B</p>
+            </div>
+            <div class="Business_Footer2">
+                <h2>Lionel Messi</h2>
+            </div>
+        </div>
+    </div>
+
+    <button id="Business_Button3">
+        View Player Skills
+    </button>
+
+    <div id="Hazard_Modal" class="Modal">
+        <div class="Content">
+            <div class="Business_Header3">
+                <span class="Closer3">&times;
+                </span>
+                <h2>Eden Hazard</h2>
+            </div>
+            <div class="Business_Body3">
+                <h3>Shooting</h3>
+                <p>B-</p>
+                <h3>Dribbling</h3>
+                <p>A</p>
+                <h3>Heading</h3>
+                <p>C-</p>
+                <h3>Free Kicks</h3>
+                <p>B</p>
+                <h3>Pace</h3>
+                <p>B+</p>
+            </div>
+            <div class="Business_Footer3">
+                <h2>Eden Hazard</h2>
+            </div>
+        </div>
+    </div>
+
+    <button id="Business_Button4">
+        View Player Skills
+    </button>
+
+    <div id="Aguero_Modal" class="Modal">
+        <div class="Content">
+            <div class="Business_Header4">
+                <span class="Closer4">&times;
+                </span>
+                <h2>Sergio Aguero</h2>
+            </div>
+            <div class="Business_Body4">
+                <h3>Shooting</h3>
+                <p>A</p>
+                <h3>Dribbling</h3>
+                <p>B-</p>
+                <h3>Heading</h3>
+                <p>C+</p>
+                <h3>Free Kicks</h3>
+                <p>D</p>
+                <h3>Pace</h3>
+                <p>B</p>
+            </div>
+            <div class="Business_Footer4">
+                <h2>Sergio Aguero</h2>
+            </div>
+        </div>
+    </div>
+
+    <button id="Business_Button5">
+        View Player Skills
+    </button>
+
+    <div id="Bale_Modal" class="Modal">
+        <div class="Content">
+            <div class="Business_Header5">
+                <span class="Closer5">&times;
+                </span>
+                <h2>Gareth Bale</h2>
+            </div>
+            <div class="Business_Body5">
+                <h3>Shooting</h3>
+                <p>B-</p>
+                <h3>Dribbling</h3>
+                <p>C</p>
+                <h3>Heading</h3>
+                <p>B+</p>
+                <h3>Free Kicks</h3>
+                <p>A</p>
+                <h3>Pace</h3>
+                <p>A</p>
+            </div>
+            <div class="Business_Footer5">
+                <h2>Gareth Bale</h2>
+            </div>
+        </div>
+    </div>
+
+    <button id="Business_Button6">
+        View Player Skills
+    </button>
+
+    <div id="Suarez_Modal" class="Modal">
+        <div class="Content">
+            <div class="Business_Header6">
+                <span class="Closer6">&times;
+                </span>
+                <h2>Luis Suarez</h2>
+            </div>
+            <div class="Business_Body6">
+                <h3>Shooting</h3>
+                <p>A-</p>
+                <h3>Dribbling</h3>
+                <p>A-</p>
+                <h3>Heading</h3>
+                <p>C+</p>
+                <h3>Free Kicks</h3>
+                <p>B</p>
+                <h3>Pace</h3>
+                <p>C+</p>
+            </div>
+            <div class="Business_Footer6">
+                <h2>Luis Suarez</h2>
+            </div>
+        </div>
+    </div>
+
+    <table id="playerTable">
+        <tr>
+            <td> </td>
+            <td>Goals</td>
+            <td>Corners</td>
+            <td>Assists</td>
+        </tr>
+        <tr>
+            <td>Cristiano Ronaldo</td>
+            <td><input type="text" name="ronaldoGoal" id="ronaldoGoal" value=""></td>
+            <td><input type="text" name="ronaldoCorner" id="ronaldoCorner" value=""></td>
+            <td><input type="text" name="ronaldoAssist" id="ronaldoAssist" value=""></td>
+        </tr>
+        <tr>
+            <td>Lionel Messi</td>
+            <td><input type="text" name="messiGoal"id="messiGoal" value=""></td>
+            <td><input type="text" name="messiCorner" id="messiCorner" value=""></td>
+            <td><input type="text" name="messiAssist" id="messiAssist" value=""></td>
+        </tr>
+        <tr>
+            <td>Eden Hazard</td>
+            <td><input type="text" name="hazardGoal" id="hazardGoal" value=""></td>
+            <td><input type="text" name="hazardCorner" id="hazardCorner" value=""></td>
+            <td><input type="text" name="hazardAssist" id="hazardAssist" value=""></td>
+        </tr>
+        <tr>
+        <td>Sergio Aguero</td>
+            <td><input type="text" name="agueroGoal" id="agueroGoal" value=""></td>
+            <td><input type="text" name="agueroCorner" id="agueroCorner" value=""></td>
+            <td><input type="text" name="agueroAssist" id="agueroAssist" value=""></td>
+        </tr>
+        <tr>
+            <td>Gareth Bale</td>
+            <td><input type="text" name="baleGoal" id="baleGoal" value=""></td>
+            <td><input type="text" name="baleCorner" id="baleCorner" value=""></td>
+            <td><input type="text" name="baleAssist" id="baleAssist" value=""></td>
+        </tr>
+        <tr>
+            <td>Luis Suarez</td>
+            <td><input type="text" name="suarezGoal" id="suarezGoal" value=""></td>
+            <td><input type="text" name="suarezCorner" id="suarezCorner" value=""></td>
+            <td><input type="text" name="suarezAssist" id="suarezAssist" value=""></td>
+        </tr>
+        <input type="button" id="tableButton" value="Submit" onClick="pr()">
+    </table>
+
+   Game Summary: <span id="result"></span>
+
+
+    <script src ="Business_Card.js"></script>
+    <script src="Players.js"></script>
+
+
 </body>
 </html>

@@ -1,0 +1,324 @@
+h1{
+    Font-family: Helvectia,Arial,sans-serif;
+    text-align: center;
+    background-color: green;
+}
+
+body{
+    font-family:Helvectia,Arial, sans-serif;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+table{
+    width: 100%;
+}
+
+table,th,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+.Modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.Content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    -webkit-animation-name: slideinfrombottom;
+    -webkit-animation-duration: 0.5s;
+    animation-name: slideinfrombottom;
+    animation-duration: 0.5s;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideinfrombottom {
+    from {bottom:-300px; opacity:0}
+    to {bottom:0; opacity:1}
+}
+
+@keyframes slideinfrombottom{
+    from {bottom:-300px; opacity:0}
+    to {bottom:0; opacity:1}
+}
+
+/* The Close Button */
+.Closer {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Closer2 {
+     color: gold;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+ }
+
+.Closer3 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Closer4 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Closer5 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Closer6 {
+    color: gold;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Closer:hover,
+ .Closer:focus,.Closer2:hover,
+.Closer2:focus, .Closer3:hover,
+.Closer3:focus.Closer4:hover,
+.Closer4:focus,Closer5:hover,
+.Closer5:focus,Closer6:hover,
+.Closer6:focus{
+     cursor: pointer;
+ }
+
+
+.Business_Header {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.Business_Header2 {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: crimson;
+    color: Gold;
+    border-bottom: 3px solid gold;
+}
+
+.Business_Header3 {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: darkblue;
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.Business_Header4 {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: deepskyblue;
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.Business_Header5 {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.Business_Header6 {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: crimson;
+    color: Gold;
+    border-bottom: 3px solid gold;
+}
+
+.Business_Body {
+    background-image: url("https://goo.gl/MXH46r");
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-size: 300px;
+    text-align: center;
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+}
+
+.Business_Body2 {
+     background-image: url("https://goo.gl/VS4mEC");
+     background-repeat: no-repeat;
+     background-position:left top;
+     background-size: 300px;
+     text-align: center;
+     padding: 2px 16px;
+    background-color: darkblue;
+    color: gold;
+ }
+
+.Business_Body3 {
+    background-image: url("https://goo.gl/Vodxvn");
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-size: 300px;
+    text-align: center;
+    padding: 2px 16px;
+    background-color: darkblue;
+    color: white;
+}
+
+.Business_Body4 {
+    background-image: url("https://goo.gl/a4u3gu");
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-size: 300px;
+    text-align: center;
+    padding: 2px 16px;
+    background-color: deepskyblue;
+    color: black;
+}
+
+.Business_Body5 {
+    background-image: url("https://goo.gl/VhQ9V4");
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-size: 300px;
+    text-align: center;
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+}
+
+.Business_Body6 {
+    background-image: url("https://goo.gl/1zlSN8");
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-size: 300px;
+    text-align: center;
+    padding: 2px 16px;
+    background-color: darkblue;
+    color: gold;
+}
+
+.Business_Footer {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+    border-top: 3px solid black;
+}
+
+.Business_Footer2 {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: crimson;
+    color: gold;
+    border-top: 3px solid gold;
+}
+
+.Business_Footer3 {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: darkblue;
+    color: white;
+    border-top: 3px solid white;
+}
+
+.Business_Footer4 {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: deepskyblue;
+    color: black;
+    border-top: 3px solid black;
+}
+
+.Business_Footer5 {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+    border-top: 3px solid black;
+}
+
+.Business_Footer6 {
+    text-align: center;
+    padding: 2px 16px;
+    background-color: crimson;
+    color: gold;
+    border-top: 3px solid gold;
+}
+
+
+#Business_Button{
+     font-size: x-small;
+     position:absolute;
+     transition: .5s ease;
+     top:80px;
+     right: 490px;
+ }
+
+#Business_Button2{
+    font-size: x-small;
+    position:absolute;
+    transition: .5s ease;
+    top:100px;
+    right: 515px;
+}
+
+#Business_Button3{
+    font-size: x-small;
+    position:absolute;
+    transition: .5s ease;
+    top:119px;
+    right: 520px;
+}
+
+#Business_Button4{
+    font-size: x-small;
+    position:absolute;
+    transition: .5s ease;
+    top:138px;
+    right: 485px;
+}
+
+#Business_Button5{
+    font-size: x-small;
+    position:absolute;
+    transition: .5s ease;
+    top:157px;
+    right: 510px;
+}
+
+#Business_Button6{
+    font-size: x-small;
+    position:absolute;
+    transition: .5s ease;
+    top:176px;
+    right: 518px;
+}
